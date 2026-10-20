@@ -2,7 +2,7 @@
 import type { Product } from "@/types/product";
 
 async function getProducts(): Promise<Product[]> {
-  const apiUrl = process.env.AUTH_BACKEND_API_URL;
+  const apiUrl = process.env.BACKEND_API_URL;
 
   if (!apiUrl) {
     throw new Error("BACKEND_API_URL is not configured");
